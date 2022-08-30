@@ -1,0 +1,51 @@
+/* -------------------- AdminLogin ------------------------ */
+
+.container.adimnlogin__container {
+    width: 40%;
+    padding: 4rem;
+}
+
+.adminlogin__container form {
+    padding: 4rem;
+}
+
+.admin__form input {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background: transparent;
+    border: 2px solid var(--color-gold);
+    color: var(--color-primary-profile);
+    resize: none;
+    font-size: 1rem;
+    margin: 4px;
+}
+
+.notice::before {
+    content: "*"; 
+    width: 1px;
+    color: red;
+}
+
+/* -------------------- Add component style ----------------------- */
+
+.container.addform__container {
+    width: 40%;
+    padding: 4rem;
+}
+
+.add__form input {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background: transparent;
+    border: 2px solid var(--color-gold);
+    color: var(--color-primary-profile);
+    resize: none;
+    font-size: 1rem;
+    margin: 4px;
+}
+
+.addform__container button {
+    margin: 0.3rem 0.5rem 0 0;
+}

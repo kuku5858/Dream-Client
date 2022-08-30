@@ -1,0 +1,18 @@
+.footer__container {
+    background: var(--color-green-collection);
+    color: var(--color-baige);
+    text-align: center;
+    padding: 3rem 0 7rem 0;
+}
+
+.footer__icons {
+    margin: 1rem;
+    font-size: 1.3rem;
+    color: var(--color-baige);
+}
+
+.footer__icons:hover {
+    margin: 1rem;
+    font-size: 1.3rem;
+    color: var(--color-gold);
+}

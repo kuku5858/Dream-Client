@@ -1,0 +1,16 @@
+
+.info__image {
+  max-width: 100%;
+}
+
+.dots {
+    background: var(--color-baige-variant);
+}
+
+.swiper-pagination-clickable .swiper-pagination-bullet {
+    background: var(--color-baige-variant);
+}
+
+.swiper-button-prev .swiper-button-next {
+    color: var(--color-baige-variant);
+}

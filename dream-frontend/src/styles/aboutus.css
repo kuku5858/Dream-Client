@@ -1,0 +1,63 @@
+.container.aboutus__container {
+    width: 60%;
+}
+
+.form__container {
+    width: 60%;     
+}
+
+.form__title {
+    margin: 3rem 0 2rem 0;
+    text-align: center;
+}
+
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+
+.contact__form input, textarea {
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    background: transparent;
+    border: 2px solid var(--color-gold);
+    color: var(--color-primary-profile);
+    resize: none;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.phone__city {
+    display: flex;
+    gap: 0.5rem;
+}
+
+/* ================= Media Queries (Medium Devices) ===================*/
+
+@media screen and (max-width: 1024px) {
+    .container.aboutus__container {
+        width: var(--container-width-md);
+    }
+    .form__container {
+        width: 100%;
+    }
+}
+
+/* ================= Media Queries (Small Devices) ===================*/
+
+@media screen and (max-width: 600px) {
+
+    .container.aboutus__container {
+        width: var(--container-width-sm);
+    }
+    
+    input, textarea {
+        width: 100%;
+        padding: 1rem;
+        font-size: 0.9rem;
+    }
+}
