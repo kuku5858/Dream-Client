@@ -3,6 +3,7 @@ const bodyParser = require('body-parser');
 const app = express();
 const cors = require('cors');
 const mongoose = require('mongoose');
+const path = require('path');
 
 require('dotenv').config();
 
@@ -31,6 +32,12 @@ app.use('/api/auth', authRouter);
 app.use('/api/carts', cartRouter);
 app.use('/api/orders', orderRouter);
 app.use('/api/checkout', stripePayment);
+
+app.use(express.static(path.join(__dirname, "/dream-frontend/build")));
+
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '/dream-frontend/build', 'index.html'));
+});
 
 
 app.listen(port, () => {
